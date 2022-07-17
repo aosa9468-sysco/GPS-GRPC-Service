@@ -1,10 +1,8 @@
 {
   "name": "api-gateway",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
-  "license": "UNLICENSED",
+  "description": "REST Api Gateway",
+  "author": "Amali Osadi",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -18,10 +16,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json",
-    "proto:auth": "protoc --plugin=node_modules/.bin/protoc-gen-ts_proto --ts_proto_out=src/auth/ src/proto/auth.proto --ts_proto_opt=nestJs=true --ts_proto_opt=fileSuffix=.pb",
-    "proto:gps": "protoc --plugin=node_modules/.bin/protoc-gen-ts_proto --ts_proto_out=src/gps/ src/proto/gps.proto --ts_proto_opt=nestJs=true --ts_proto_opt=fileSuffix=.pb",
-    "proto:all": "npm run proto:auth && npm run proto:gps"
+    "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.6.7",

@@ -1,10 +1,8 @@
 {
   "name": "gps-svc",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
-  "license": "UNLICENSED",
+  "description": "GPS Grpc Microservice",
+  "author": "Amali Osadi",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
