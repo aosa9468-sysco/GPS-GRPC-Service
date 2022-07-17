@@ -34,5 +34,7 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# sub folders
+# sub directories
 /api-gateway/node_modules
+/microservices/auth-svc/node_modules
+/microservices/gps-svc/node_modules
